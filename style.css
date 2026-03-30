@@ -15,11 +15,9 @@ html,body {
 
 /* * {
     outline: 1px solid red !important;
+    
 } */
-article {
-    flex: 1 1 auto;
-    display: inline;
-}
+
 h1 {
    color: #601c8d;
    text-align: center;
@@ -35,11 +33,16 @@ h1 {
 }
 nav {
     background-color: rgba(99, 35, 141, 0.8);
-    padding: 12px 0;
+    padding: 10px 0;
     width: 100%; 
     backdrop-filter: blur(2px);
     position:relative;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 nav ul {
@@ -49,11 +52,16 @@ nav ul {
     gap: 1rem;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 20px 0 20px;
     width: 100%;  
-    /* flex-wrap: wrap;         */
+    flex-wrap: wrap;        
 }
 nav a {
+    text-align: center;
+    margin: 0;
+    min-width: 80px;
+    flex: 1 1 auto;
+    white-space: nowrap;
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -65,33 +73,43 @@ nav a {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    flex-direction: row;
     flex: 1 1 auto;
     margin: 20px;
-    width: auto;
-    /* display: inline-block; */
-     position: relative;
+    width: 90%;
+    position: relative;
 }
 .cats-container {
-    flex: 1 1 auto;
+    flex: 1;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     padding:15px;
     border: 3px solid #8067b9;
     border-radius: 12px;
     background-color: rgba(128,103,185,0.2);
-    margin-bottom: 0 0 0 15px; 
+    margin-bottom: 0 0 0 15px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .cat-pics {
     border-radius: 10px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    display: flex;
 }
 .cat-description{
+    flex: 1 1 300px;
+    text-align: center;
+    min-width: 0;
+    font-size: 0.8rem;
     color: white;
     border: 2px solid white;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    /* display: flex; */
     position: relative;
     width: 100%;
     margin: 0;
