@@ -43,16 +43,17 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 5px;
+   
 }
 
 nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 10px;
     list-style: none;
     padding: 0;
-    margin: 0 20px 0 20px;
+    margin: 0 10px 0 10px;
     width: 100%;  
     flex-wrap: wrap;        
 }
@@ -76,15 +77,16 @@ nav a {
     flex-direction: row;
     flex: 1 1 auto;
     margin: 20px;
-    width: 90%;
+    width: auto;
     position: relative;
+    /* padding-top: 50px; */
 }
 .cats-container {
     flex: 1;
     display: flex;
     align-items: center;
     gap: 20px;
-    padding:15px;
+    padding:20px;
     border: 3px solid #8067b9;
     border-radius: 12px;
     background-color: rgba(128,103,185,0.2);
@@ -93,12 +95,33 @@ nav a {
     box-sizing: border-box;
     flex-wrap: wrap;
     justify-content: center;
+    
+}
+.title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    top:-13px;
+    color: #4d0c78;
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px wheat;
+    width: auto;
+    margin: 15px 0 0 0;
+    padding: 0;
+    
 }
 .cat-pics {
     border-radius: 10px;
     flex-wrap: wrap;
-    max-width: 100%;
+    max-width: auto;
     display: flex;
+    /* order: 1; */
+
 }
 .cat-description{
     flex: 1 1 300px;
@@ -113,6 +136,7 @@ nav a {
     position: relative;
     width: 100%;
     margin: 0;
+    /* order: 1; */
 }
 p {
     color: #392864;
